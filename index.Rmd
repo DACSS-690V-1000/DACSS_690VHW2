@@ -1,0 +1,36 @@
+---
+title: "School Locations & Student-Teacher Ratio in MA"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=50}
+-----------------------------------------------------------------------
+
+### Most Schools are Located in Suburbs
+
+```{r}
+schoolloc_plot1<-readRDS(url("https://github.com/DACSS-690V-1000/DACSS_690VHW2/raw/main/schoolloc_plot.rds"))
+schoolloc_plot1
+```
+
+Column {data-width=50}
+-----------------------------------------------------------------------
+
+### The Mean and Median Student-Teacher Ratio is Affected by Outliers
+
+```{r}
+sdt_tchrat_school1 <- readRDS(url("https://github.com/DACSS-690V-1000/DACSS_690VHW2/raw/main/sdt_tchrat_school.rds"))
+sdt_tchrat_school1
+```
+
+
+
+
+
