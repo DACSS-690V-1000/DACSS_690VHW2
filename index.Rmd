@@ -1,14 +1,22 @@
 ---
 title: "School Locations & Student-Teacher Ratio in MA"
+bibliografy: references.bib
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
 ```
+
+## Intro {.sidebar}
+
+The data in this report comes from the National Center for Education and Statistics [@national_center_for_education_statistics_massachussetts_2024].
+
+
+
 
 Column {data-width=50}
 -----------------------------------------------------------------------
@@ -29,7 +37,6 @@ Column {data-width=50}
 sdt_tchrat_school1 <- readRDS(url("https://github.com/DACSS-690V-1000/DACSS_690VHW2/raw/main/sdt_tchrat_school.rds"))
 sdt_tchrat_school1
 ```
-
 
 
 

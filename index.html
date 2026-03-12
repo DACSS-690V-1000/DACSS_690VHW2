@@ -1932,6 +1932,11 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
+<div id="intro" class="section level2 sidebar">
+<h2 class="sidebar">Intro</h2>
+<p>The data in this report comes from the National Center for Education
+and Statistics <span class="citation">[@national_center_for_education_statistics_massachussetts_2024]</span>.</p>
+</div>
 <div id="column" class="section level2" data-width="50">
 <h2>Column</h2>
 <div id="most-schools-are-located-in-suburbs" class="section level3">
@@ -1974,7 +1979,7 @@ $(document).ready(function() {
 $(document).ready(function () {
   FlexDashboard.init({
     fillPage: true,
-    orientation: "columns",
+    orientation: "rows",
     storyboard: false,
     defaultFigWidth: 576,
     defaultFigHeight: 460,
